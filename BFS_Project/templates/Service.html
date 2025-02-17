@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="/static/css/Service.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+          {% comment %} bootstrap cdn links {% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="serviceContainer">
+        <div class="BannerContainer">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/static/media/services/serviceBanner.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption ">
+                  <p class="banner-subtitle">
+                    <span class="me-1"
+                      ><a href="{% url 'home' %}">Home</a></span
+                    ><span class="bi bi-chevron-right me-2"></span
+                    ><span>Services</span>
+                  </p>
+                  <p class="banner-title">Services</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- service card part -->
+          <div class="service-container">
+            <div class="service-card-part">
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Accounting and Bookkeeping Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services offers comprehensive Accounting and
+                    Bookkeeping....
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg1.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">Audit and Review Services</div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services provides a comprehensive range of audit
+                    and review services to ensure transparency,...
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg2.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Direct Tax & Indirect Tax Scrutiny and Assessments
+                  </div>
+                  <div class="service-card-subtitle">
+                    we understand the complexities involved in tax scrutiny and....
+                  </div>
+                  <div class="service-card-read">
+                   <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg3.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    US Taxation & Transfer Pricing Compliances
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services offers a wide range of services tailored to meet US taxation....
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg4.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Financial Statement Preparation &  Audit Support Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services offers comprehensive...
+                  </div>
+                  <div class="service-card-read">
+                   <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg5.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Business Registration & Other Statutory Compliance Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services we understand the importance of...
+                  </div>
+                  <div class="service-card-read">
+                   <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg6.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Virtual CFO (Virtual chief financial officer)
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services' Virtual CFOs offer strategic financial  leadership, budgeting,...
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg7.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Payroll-Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services offers comprehensive payroll solutions to streamline your payroll processes and ensure accurate and....
+                  </div>
+                  <div class="service-card-read">
+                   <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg8.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Business Advisory Services at Beliebt Financial Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    we offer a comprehensive range of business advisory services to support...
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg9.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Techno Economic Viability Study (TEV)
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services conducts Techno Economic Viability Studies (TEV) to assess if projects...
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg10.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Intellectual-Property-Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    At Beliebt Financial Services we offer comprehensive Intellectual Property Services to safeguard your innovative...
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg11.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Financial Restructuring Services & IT Integrations
+                  </div>
+                  <div class="service-card-subtitle">
+                    At Beliebt Financial Services, we offer comprehensive Financial Restructuring & IT...
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg12.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Investment Banking Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services prides itself on offering premier Investment Banking Services, catering... 
+                  </div>
+                  <div class="service-card-read">
+                   <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg13.png" />
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card-content">
+                  <div class="service-card-title">
+                    Forensic Audit Services
+                  </div>
+                  <div class="service-card-subtitle">
+                    Beliebt Financial Services prides itself on offering premier Investment Banking Services, catering... 
+                  </div>
+                  <div class="service-card-read">
+                    <a href="{% url 'service' %}">Read More <span class="bi bi-arrow-right ms-2"></span></a>
+                  </div>
+                </div>
+                <div class="serviceImg">
+                  <img src="/static/media/services/serviceImg14.png" />
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          <!-- client names -->
+          <div class="client-container">
+            <div class="client-title">Happy User’s</div>
+            <div class="client-list">
+              <div class="clientImg"><img src="/static/media/home/client1.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client2.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client3.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client4.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client5.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client6.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client1.png" /></div>
+              <div class="clientImg"><img src="/static/media/home/client2.png" /></div>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>

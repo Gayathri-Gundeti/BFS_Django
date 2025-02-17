@@ -1,0 +1,322 @@
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  .banner-title{
+    color: #FEFEFE;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+    font-style: normal;
+  }
+.banner-subtitle{
+    font-size: 16px;
+    color: #FEFEFE;
+    font-weight: 400;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+} 
+.banner-subtitle a{
+    text-decoration: none;
+    color: #B8B8B8;
+}
+.banner-subtitle a:hover{
+    color: white;
+}
+
+/* service content */
+.services-part{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 30px;
+    padding: 50px;
+}
+.service-category{
+    background-color: #E6F6F0;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.category-title{
+    color: #1A1A1A;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.category-subtitle{
+    color: #02A66A;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    margin-bottom: 20px;
+
+}
+.category-list div{
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      margin-bottom: 20px;
+}
+.category-list div:hover{
+    color: #1A1A1A;
+    cursor: pointer;
+}
+.service-details div{
+    margin-bottom: 20px;
+}
+.service-details-title{
+    color: #02A66A;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.service-details-subtitle{
+    color: #666666;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.details-subtitle{
+    color: #02A66A;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    font-style: normal;
+
+}
+.details-desc{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+}
+
+/* contact form */
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 30px;
+    padding: 50px;
+}
+.contact-left div{
+    margin-bottom: 20px;
+}
+.contact-title{
+    color: #1A1A1A;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.contact-subtitle{
+    color: #02A66A;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Poppins", serif;
+    font-style: normal;
+
+}
+.contact-desc{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.contact-mail{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.contact-mobile{
+    color: #666666;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+}
+
+.contact-right div{
+    margin-bottom: 20px;
+}
+.form-title{
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.form-subtitle{
+    color: #02A66A;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+label{
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Cabin", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.bi-person{
+    position: absolute;
+    left: 5px;
+    color: #969696;
+    margin-top: 5px;
+   
+}
+.bi-chat-left-text{
+    position: absolute;
+    left: 5px;
+    color: #969696;
+    margin-top: 8px;
+
+}
+.bi-envelope{
+    position: absolute;
+    left: 5px;
+    color: #969696;
+    justify-content: center;
+    margin-top: 5px;
+}
+.inputField{
+    position: relative;
+}
+.inputField input{
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+   
+}
+textarea{
+    resize: none;
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+   
+}
+.inputField input:focus{
+ outline: none;
+   
+}
+textarea:focus{
+    outline: none;
+}
+textarea::placeholder{
+    position: absolute;
+    left: 25px;
+    color: #969696;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      justify-content: center;
+
+}
+.inputField input::placeholder{
+    position: absolute;
+    left: 25px;
+    color: #969696;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      justify-content: center;
+
+}
+.btnSignin{
+    background-image: linear-gradient(to bottom right,#02955F, #083778);
+    border: none;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.btnSignin:hover{
+    background-image: linear-gradient(to bottom right, #083778,#02955F);
+
+}
+.userName{
+    color: #02A66A;
+    font-size: 32px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+.signinText{
+    color: #1A1A1A;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.inputField label{
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
