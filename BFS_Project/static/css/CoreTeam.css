@@ -160,15 +160,20 @@
 }
 .hover-icons{
     display: flex !important;
+    gap: 10px !important;
     justify-content: right  !important;
     justify-items: right !important;
     align-items: right !important;
 }
+
 .hover-icons span{
     color: #FFFFFF;
     background-color: #106EEF;
     padding: 5px 8px;
     border-radius: 20px;
+    display: inline-block;
+    height: 35px !important;
+  
 }
 @media screen and (max-width:776px){
     .team-cards-part{
@@ -194,11 +199,11 @@
         gap: 10px;
     }
     .hover-icons {
-        display: flex;
-        gap: 10px;
-        justify-content: left;
-        align-items: left;
-        justify-items: left;
+        display: flex !important;
+        gap: 10px !important;
+        justify-content: left !important;
+        align-items: left !important;
+        justify-items: left !important;
     
     }
     .hover-icons span{
@@ -206,9 +211,11 @@
         background-color: #106EEF;
         padding: 5px 8px;
         border-radius: 20px;
-        font-size: 14px;
+        display: inline-block;
+        height: 35px;
       
     }
+  
 
 }
 @media screen and (max-width:576px){
@@ -289,13 +296,14 @@
   
     
     }
-    .team-card-hover {
+     .team-card-hover {
        
         border-radius: 10px;
         display: grid;
         grid-template-columns: 6fr 6fr;
         gap: 10px;
     }
+   
     
 
 }

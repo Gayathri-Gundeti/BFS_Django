@@ -963,6 +963,8 @@ font-style: normal;
     background-color: #106EEF;
     padding: 5px 8px;
     border-radius: 20px;
+    display: inline-block;
+    height: 35px;
   
 }
 @media screen and (max-width:776px){
@@ -994,7 +996,8 @@ font-style: normal;
         background-color: #106EEF;
         padding: 5px 8px;
         border-radius: 20px;
-        font-size: 14px;
+        display: inline-block;
+        height: 35px;
       
     }
 
@@ -1046,7 +1049,6 @@ font-style: normal;
         grid-template-columns: 6fr 6fr;
         gap: 10px;
     }
-  
 
 }
 
@@ -1056,7 +1058,7 @@ font-style: normal;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    max-height: 100%;
 }
 .make-subcontainer{
     display: grid;
@@ -1066,8 +1068,9 @@ font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-items: center;
-    /* height: 70vh; */
+    max-height: 100%;
+    padding: 60px 0px;
+ 
 
 }
 .make-content div{
@@ -1090,14 +1093,46 @@ font-style: normal;
     font-variation-settings:
       "width" 100;
 }
+.btnMakeGet{
+    background-image: linear-gradient(to bottom right, #02955f, #083778);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+  }
+  
+  .btnMakeGet:hover {
+    background-image: linear-gradient(to bottom right, #083778, #02955f);
+  }
+
+@media screen and (max-width:992px){
+    .btnMakeGetcont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+}
 @media screen and (max-width:776px){
     .make-subcontainer{
         display: grid;
         grid-template-columns: 12fr;
-        padding:20px;
     }
 }
 @media screen and (max-width:576px){
+    .make-subcontainer{
+       padding: 30px;
+        
+    }
+    .make-content{
+        
+        text-align: center;
+     
+    
+    }
     .make-title{
         
         font-size: 25px;
@@ -1114,6 +1149,10 @@ font-style: normal;
 
 }
 @media screen and (max-width:456px){
+    .make-subcontainer{
+        padding: 20px;
+         
+     }
     .make-title{
         
         font-size: 20px;
