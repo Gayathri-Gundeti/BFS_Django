@@ -147,8 +147,9 @@
               and we're committed to helping you achieve just that.
             </div>
           
-            <div ><button class="btnGet" data-bs-toggle="modal" data-bs-target="#exampleModal">Get In Touch<span class="bi bi-arrow-right ms-2"></span></button>
-             <span class="btnService"><a href="{% url 'service' %}">Our Services</a><span class="bi bi-arrow-right ms-2"></span>
+            <div class="btnParnercon">
+             <div><button class="btnGet" data-bs-toggle="modal" data-bs-target="#exampleModal">Get In Touch<span class="bi bi-arrow-right ms-2"></span></button></div>
+             <div> <span class="btnService"><a href="{% url 'service' %}">Our Services</a><span class="bi bi-arrow-right ms-2"></span></div>
             </div>
           </div>
         </div>
@@ -179,7 +180,10 @@
        <!-- services section -->
        <div class="service-container">
         <div class="service-title">Services</div>
-        <div class="service-subtitle">Our Services</div>
+         <div>
+        <span class="service-subtitle">Our Services</span>
+        <span class="service-viewall float-end"><a href="{% url 'service' %}">View all <span class="bi bi-arrow-right"></span></a></span>
+      </div>
         <div class="service-card-part">
           <div class="service-card">
             <div class="service-card-content">

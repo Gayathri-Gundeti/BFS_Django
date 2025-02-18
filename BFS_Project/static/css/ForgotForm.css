@@ -163,3 +163,52 @@ textarea::placeholder{
     font-style: normal;
     text-decoration: none;
 }
+@media screen and (max-width: 992px) {
+    .signup-subcontainer {
+      display: grid;
+      grid-template-columns: 12fr;
+      width: 70%;
+    }
+    .signup-left {
+      display: none;
+    }
+    .signup-right {
+      border-radius: 12px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .signup-subcontainer {
+      width: 90%;
+    }
+    .signup-right {
+      border-radius: 12px;
+      padding: 20px;
+    }
+  
+    .userName {
+      font-size: 25px;
+    }
+    .signinText {
+      font-size: 16px;
+    }
+  
+    .inputField label {
+      font-size: 14px;
+    }
+    .forgotText a {
+      font-size: 14px;
+    }
+    .btnSignin {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 456px) {
+    .Signuplogo {
+      width: 80%;
+    }
+    .Signuplogo img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  

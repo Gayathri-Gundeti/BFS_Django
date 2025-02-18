@@ -42,8 +42,8 @@
     <header>
       
         
-        <div><img src="/static/media/BFS_logo.png" /></div>
-        <div><span class="bi bi-justify " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"></span></div>
+        <div class="headerLogo"><img src="/static/media/BFS_logo.png" /></div>
+        <div><span class="bi bi-list" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"></span></div>
      
       <div class="menu-list">
         <span><a href="{% url 'home' %}">Home</a></span>
@@ -55,7 +55,9 @@
       <div class="btnSigncont">
         <button class="btnSign"  ><a href="{% url 'signup' %}">Sign In</a></button>
       </div>
-      <!-- off canvas -->
+   
+    </header>
+       <!-- off canvas -->
       
     
       
@@ -66,21 +68,21 @@
         </div>
         <div class="offcanvas-body">
           <div class="mobile-menuList">
-            <div><a href="../Home_Page/home.html"><span class="bi bi-house-door me-2"></span>Home</a></div>
-            <div><a href="../about/about.html"><span class="bi bi-info-circle me-2"></span>About Us</a></div>
-            <div><a href="../services_page/service.html"><span  class="bi bi-truck me-2"></span>Services</a></div>
-            <div><a href="../core_team/core.html"><span class="bi bi-people me-2"></span>Team</a></div>
-            <div><a href="../contact/contact.html"><span  class="bi bi-person-rolodex me-2"></span>Contact Us</a></div>
-            <div> <button class="btnSignMobile"  ><a href="../signup/signup.html">Sign In</a></button></div>
+          
+            <div><a href="{% url 'home' %}"><span class="bi bi-house-door me-2"></span>Home</a></div>
+            <div><a href="{% url 'about' %}"><span class="bi bi-info-circle me-2"></span>About Us</a></div>
+            <div><a href="{% url 'service' %}"><span  class="bi bi-truck me-2"></span>Services</a></div>
+            <div><a href="{% url 'core' %}"><span class="bi bi-people me-2"></span>Team</a></div>
+            <div><a href="{% url 'contact' %}"><span  class="bi bi-person-rolodex me-2"></span>Contact Us</a></div>
+            <div> <button class="btnSignMobile"  ><a href="{% url 'signup' %}">Sign In</a></button></div>
           </div>
         </div>
       </div>
-    </header>
     <!-- Banner -->
     <div class="banner-container">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" >
             <img
               src="/static/media/home/banner1.png"
               class="d-block w-100"
@@ -94,13 +96,13 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" >
             <img
               src="/static/media/home/banner2.png"
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption ">
               <p class="banner-subtitle">Tax Planning & Compliance</p>
               <p class="banner-title">Tax Planning & Compliance</p>
               <button class="btnBanner"  data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -108,18 +110,18 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" >
             <img
               src="/static/media/home/banner3.png"
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <p class="banner-subtitle">Financial Investment</p>
-              <p class="banner-title">Financial Investment</p>
-              <button class="btnBanner"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="carousel-caption">
+              <div class="banner-subtitle">Financial Investment</div>
+              <div class="banner-title">Financial Investment</div>
+              <div><button class="btnBanner"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Get In Touch<span class="bi bi-arrow-right ms-2"></span>
-              </button>
+              </button></div>
             </div>
           </div>
         </div>
@@ -154,7 +156,7 @@
       <div class="modal-body">
         <div class="contact-container">
           <div class="contact-left">
-              <div><img src="/static/media/BFS_logo.png"></div>
+              <div class="modalLogo"><img src="/static/media/BFS_logo.png"></div>
             <div class="contact-title">Catch Us Here</div>
             <div class="contact-subtitle">
               Get in Touch for Expert Financial Guidance
@@ -223,7 +225,7 @@
             just that.
           </div>
           <div class="btnGetCont">
-            <button class="btnBanner"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button class="btnGet"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               Get In Touch<span class="bi bi-arrow-right ms-2"></span>
             </button>
           </div>
@@ -249,7 +251,7 @@
               <div><img src="/static/media/home/teamImg.png" /></div>
               <div class="hover-title">OUR TEAM</div>
               <div class="hover-subtitle">Meet Our Expert Team</div>
-              <div><a href="{% url 'core' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
+              <div class="knowarrowImg"><a href="{% url 'core' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
             </div>
           </div>
         </div>
@@ -260,7 +262,7 @@
               <div><img src="/static/media/home/visionImg.png" /></div>
               <div class="hover-title">OUR VISION</div>
               <div class="hover-subtitle">Inspiring Financial Prosperity</div>
-              <div><a href="{% url 'about' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
+              <div class="knowarrowImg"><a href="{% url 'about' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
             </div>
           </div>
         </div>
@@ -271,7 +273,7 @@
               <div><img src="/static/media/home/missionImg.png" /></div>
               <div class="hover-title">OUR MISSION</div>
               <div class="hover-subtitle">Financial Success Together</div>
-              <div><a href="{% url 'about' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
+              <div class="knowarrowImg"><a href="{% url 'about' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
             </div>
           </div>
         </div>
@@ -282,7 +284,7 @@
               <div><img src="/static/media/home/goalImg.png" /></div>
               <div class="hover-title">OUR GOAL</div>
               <div class="hover-subtitle">Empowering Financial Success</div>
-              <div><a href="{% url 'about' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
+              <div class="knowarrowImg"><a href="{% url 'about' %}"><img src="/static/media/home/knowArrow.png" /></a></div>
             </div>
           </div>
         </div>
@@ -293,7 +295,7 @@
       <div class="service-title">Services</div>
       <div>
         <span class="service-subtitle">Our Services</span>
-        <span class="service-viewall float-end"><a href="../services_page/service.html">View all <span class="bi bi-arrow-right"></span></a></span>
+        <span class="service-viewall float-end"><a href="{% url 'service' %}">View all <span class="bi bi-arrow-right"></span></a></span>
       </div>
      
       <div class="service-card-part">
@@ -355,8 +357,8 @@
           <div class="take-title">
             Take the First Step Towards Financial Freedom
           </div>
-          <div>
-            <button class="btnBanner"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="btnBannercont">
+            <button class="btnGet"  data-bs-toggle="modal" data-bs-target="#exampleModal">
               Get In Touch<span class="bi bi-arrow-right ms-2"></span>
             </button>
           </div>
@@ -378,7 +380,7 @@
           <div class="why-grid">
             <div class="why-subgrid">
               <div class="why-subgrid-title">
-                <span class="me-3"
+                <span class="me-3 bagImg"
                   ><img src="/static/media/home/suitcase.png" /></span
                 ><span>10+</span>
               </div>
@@ -386,7 +388,7 @@
             </div>
             <div class="why-subgrid">
               <div class="why-subgrid-title">
-                <span class="me-3"><img src="/static/media/home/client.png" /></span
+                <span class="me-3 bagImg"><img src="/static/media/home/client.png" /></span
                 ><span>20+</span>
               </div>
               <div class="why-subgrid-desc">Happy Clients</div>
@@ -472,7 +474,7 @@
     <div class="footer-container">
       <div class="footer-subcontainer">
         <div class="col">
-          <div><img src="/static/media/BFS_logo.png" /></div>
+          <div class="footerLogo"><img src="/static/media/BFS_logo.png" /></div>
           <div class="col-desc">
             At Beliebt Financial Services, our mission is to break down the
             barriers to financial success and make money management accessible

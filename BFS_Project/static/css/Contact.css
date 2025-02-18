@@ -28,6 +28,39 @@
 .banner-subtitle a:hover{
     color: white;
 }
+@media screen and (max-width: 776px) {
+    .carousel-caption {
+      top: 30%;
+      transform: translateY(-50%);
+      bottom: auto;
+    }
+}
+@media screen and (max-width:576px){
+    .carousel-caption {
+        top: 30%;
+        transform: translateY(-50%);
+        bottom: auto;
+      }
+    .banner-title{
+       
+        font-size: 35px;
+       
+        
+      }
+}
+@media screen and (max-width:456px){
+    .carousel-caption {
+        top: 30%;
+        transform: translateY(-50%);
+        bottom: auto;
+      }
+    .banner-title{
+       
+        font-size: 25px;
+       
+        
+      }
+}
 /* contact form */
 
 .contact-container{
@@ -233,3 +266,88 @@ textarea::placeholder{
     font-variation-settings:
       "wdth" 100;
 }
+
+@media screen and (max-width: 856px) {
+    .contact-container {
+      display: grid;
+      grid-template-columns: 12fr;
+      gap: 30px;
+      padding: 50px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .contact-container {
+      padding: 30px !important;
+    }
+    .contact-left div {
+      margin-bottom: 15px;
+    }
+    .contact-title {
+      font-size: 35px;
+    }
+    .contact-subtitle {
+      font-size: 25px;
+    }
+    .contact-desc {
+      font-size: 18px;
+    }
+    .contact-mail {
+      font-size: 18px;
+    }
+    .contact-mobile {
+      font-size: 18px;
+    }
+    .form-title {
+      font-size: 16px;
+    }
+    .form-subtitle {
+      font-size: 25px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 456px) {
+    .contact-container {
+      padding: 20px !important;
+    }
+    .contact-left div {
+      margin-bottom: 15px;
+    }
+    .contact-title {
+      font-size: 25px;
+    }
+    .contact-subtitle {
+      font-size: 20px;
+    }
+    .contact-desc {
+      font-size: 16px;
+    }
+    .contact-mail {
+      font-size: 16px;
+    }
+    .contact-mobile {
+      font-size: 16px;
+    }
+    .form-subtitle {
+      font-size: 20px;
+    }
+    .inputField input {
+      padding: 8px;
+    }
+    textarea {
+      padding: 8px;
+    }
+    .bi-person {
+      margin-top: 3px;
+    }
+    .bi-envelope {
+      margin-top: 3px;
+    }
+    .btnSignin {
+      padding: 10px;
+  
+      font-size: 14px;
+    }
+  }
+  
